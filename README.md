@@ -1,6 +1,6 @@
 <h1>fuzzy_unet</h1>
 
-<p>Dataset should be saved in image/</p>
+<p>Note: my codes based on python 3.5, keras 2.1.2, tensorflow 1.9.0, Cuda 9.0, cudnn 7.0.5. Windows and Linux and Max OS are all supported and tested.</p>
 <ol>
   <li>Download the dataset. Save the dataset in ./BUS/data2/original/ (original image) and ./BUS/data2/GT/ (ground truth)</li>
   <li>For training, just run the train.py. In console, move in to the root file of my code (where the train.py is located). Type python -M unet to train the original unet. Type python -M fuzzyunet to train the fuzzy unet.</li>

@@ -15,7 +15,7 @@
   
     @inproceedings{huang2018medical,
       title={Medical Knowledge Constrained Semantic Breast Ultrasound Image Segmentation},
-      author={Huang, Kuan and Cheng, Heng-Da and Zhang, Yingtao and Zhang, Boyu and Xing, Ping and Ning, Chunping},
+      author={Huang, Kuan and Cheng, H. D. and Zhang, Yingtao and Zhang, Boyu and Xing, Ping and Ning, Chunping},
       booktitle={2018 24th International Conference on Pattern Recognition (ICPR)},
       pages={1193--1198},
       year={2018},
@@ -24,7 +24,7 @@
     
     @article{huang2019fuzzy,
       title={Fuzzy Semantic Segmentation of Breast Ultrasound Image with Breast Anatomy Constraints},
-      author={Huang, Kuan and Zhang, Yingtao and Cheng, HD and Xing, Ping and Zhang, Boyu},
+      author={Huang, Kuan and Zhang, Yingtao and Cheng, H. D. and Xing, Ping and Zhang, Boyu},
       journal={arXiv preprint arXiv:1909.06645},
       year={2019}
     }

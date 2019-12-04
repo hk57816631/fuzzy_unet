@@ -8,7 +8,7 @@
   <li>For testing, there are two ways. First one is testing a single image. Using test.py and giving img_path, and label_path it can output segmentation result of one image. For testing a set of samples, test_path.py is used. img_path, label_path and the txt file containing name list are provided and then the set of samples are segmented and save in result_path.</li>
   <li>Wavelet.py is used to do wavelet transform. Norm.py is used to do histogram normalization. Showmed.py is used to show the intermediate results of fuzzy layer.</li>
   <li>The weights of the network are saved in “model name” + _model_weight.h5</li>
-  <li>In ./model/, the network structures in fuzzy_unet.py and SCFnet.py are two proposed fuzzy network structures. The details are shown in our paper.</li>
+  <li>In ./model/, the network structures in fuzzy_unet.py and SCFnet.py are two proposed fuzzy network structures. The details are shown in our papers.</li>
 </ol>
 
 ## Cite our papers 

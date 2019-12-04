@@ -10,6 +10,7 @@ from model.unet import unet
 from model.fuzzy_unet import fuzzy_unet
 from model.fcn import fcn_8s
 from model.pspnet import pspnet50
+from model.SCFnet import SCFnet
 from dataset_parser.generator import data_generator_dir
 
 # Current python dir path
@@ -17,8 +18,8 @@ dir_path = os.path.dirname(os.path.realpath('__file__'))
 
 # Parse Options
 parser = argparse.ArgumentParser()
-parser.add_argument("-M", "--model", required=True, choices=['fcn', 'unet', 'pspnet', 'fuzzyunet'],
-                    help="Model to train. 'fcn', 'unet', 'pspnet', 'fuzzyunet'is available.")
+parser.add_argument("-M", "--model", required=True, choices=['fcn', 'unet', 'pspnet', 'fuzzyunet', 'SCFnet'],
+                    help="Model to train. 'fcn', 'unet', 'pspnet', 'fuzzyunet', 'SCFnet'is available.")
 parser.add_argument("-TB", "--train_batch", required=False, default=4, help="Batch size for train.")
 parser.add_argument("-VB", "--val_batch", required=False, default=1, help="Batch size for validation.")
 parser.add_argument("-LI", "--lr_init", required=False, default=1e-4, help="Initial learning rate.")
@@ -34,7 +35,7 @@ lr_decay = args.lr_decay
 vgg_path = args.vgg
 
 # batch size
-TRAIN_BATCH = 11
+TRAIN_BATCH = 8
 VAL_BATCH = 1
 
 # epoch
@@ -81,6 +82,9 @@ elif model_name == "unet":
                  lr_init=lr_init, lr_decay=lr_decay, vgg_weight_path=vgg_path)
 elif model_name == "fuzzyunet":
     model = fuzzy_unet(input_shape=(img_height, img_width, channels), num_classes=nb_class,
+                 lr_init=lr_init, lr_decay=lr_decay, vgg_weight_path=vgg_path)
+elif model_name == "SCFnet":
+    model = SCFnet(input_shape=(img_height, img_width, channels), num_classes=nb_class,
                  lr_init=lr_init, lr_decay=lr_decay, vgg_weight_path=vgg_path)
 elif model_name == "pspnet":
     model = pspnet50(input_shape=(img_height, img_width, channels), num_classes=nb_class, lr_init=lr_init, lr_decay=lr_decay)

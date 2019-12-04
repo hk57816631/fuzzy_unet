@@ -8,13 +8,4 @@
   <li>Wavelet.py is used to do wavelet transform. Norm.py is used to do histogram normalization. Showmed.py is used to show the intermediate results of fuzzy layer.</li>
   <li>The weights of the network are saved in “model name” + _model_weight.h5</li>
 </ol>
-@misc{lia_corrales_2015_15991,
-        author       = {Lia Corrales},
-        title        = {{dust: Calculate the intensity of dust scattering halos in the X-ray}},
-        month        = mar,
-        year         = 2015,
-        doi          = {10.5281/zenodo.15991},
-        version      = {1.0},
-        publisher    = {Zenodo},
-        url          = {https://doi.org/10.5281/zenodo.15991}
-        }
+
